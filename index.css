@@ -1,5 +1,4 @@
 .clip-width {
-  height: 100%;
   width: 80%;
   max-width: 960px;
   margin: auto; }
@@ -90,6 +89,14 @@ hr {
   line-height: 1.6;
   font-size: 18px;
   padding: 50px 0; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 5px; }
 
 /*-- GENERAL STYLES
 ------------------------------*/
@@ -231,7 +238,9 @@ hr {
 
 html, body {
   width: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  margin: 0;
+  padding: 0; }
 
 body {
   display: flex;
@@ -245,8 +254,8 @@ header, .hero, main, footer {
   font-family: "Roboto", sans-serif; }
 
 header, footer {
-  height: 40px;
-  z-index: 10; }
+  z-index: 10;
+  min-height: 40px; }
 
 footer {
   font-size: 12px;
@@ -270,7 +279,8 @@ footer {
 
 .hero {
   height: 100%;
-  background-color: #f0eceb; }
+  background-color: #f0eceb;
+  background: linear-gradient(70deg, #f7f1e6 0%, #e0e6ec 75%); }
   @media screen and (min-width: 768px) {
     .hero {
       height: 300px; } }
@@ -283,7 +293,6 @@ footer {
   @media screen and (min-width: 768px) {
     .hero-img {
       width: auto;
-      margin: 20px;
       height: 100%; } }
 
 .hero-content {
@@ -300,6 +309,9 @@ footer {
   letter-spacing: 3px;
   font-size: 30px;
   font-weight: 100; }
+
+.fpga-schema {
+  width: 80%; }
 
 section.specs {
   padding: 20px 0;
@@ -324,3 +336,14 @@ section.development .clip-width {
     background-image: url("assets/desk-light.png");
     background-position: center;
     background-size: cover; }
+
+.resolution-comparison {
+  width: 50%; }
+  @media screen and (min-width: 768px) {
+    .resolution-comparison {
+      width: 30%;
+      float: right;
+      margin-left: 40px; } }
+
+section h1 {
+  text-align: center; }
