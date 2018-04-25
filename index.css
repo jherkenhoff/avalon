@@ -353,3 +353,11 @@ section.development .clip-width {
 
 section h1 {
   text-align: center; }
+
+@supports (-ms-ime-align: auto) {
+  @media screen and (min-width: 768px) {
+    .hero-img {
+      height: 300px; } }
+  @media screen and (min-width: 992px) {
+    .hero-img {
+      height: 500px; } } }
